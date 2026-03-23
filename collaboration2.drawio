@@ -1,0 +1,92 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/146.0.0.0 Safari/537.36" version="29.6.5">
+  <diagram name="Page-1" id="QhVjiix2Zx-HylfPasNE">
+    <mxGraphModel dx="1895" dy="1031" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-70" parent="1" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="Actor: User" vertex="1">
+          <mxGeometry height="96" width="96" x="20" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-71" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="UI: React Frontend" vertex="1">
+          <mxGeometry height="54" width="195" x="366" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-72" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="API: Backend API" vertex="1">
+          <mxGeometry height="54" width="180" x="811" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-73" parent="1" style="shape=cylinder3;boundedLbl=1;backgroundOutline=1;size=10;strokeWidth=2;whiteSpace=wrap;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="DB: PostgreSQL" vertex="1">
+          <mxGeometry height="76" width="124" x="1241" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-74" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry x="1303" y="252" as="geometry" />
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-75" parent="1" style="whiteSpace=wrap;strokeWidth=2;fillColor=light-dark(#eeeeee,#1f2020);strokeColor=light-dark(#999999,#cccccc);fontColor=light-dark(#333333,#cccccc);" value="" vertex="1">
+          <mxGeometry x="1615" y="274" as="geometry" />
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-76" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-70" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.42;entryX=0;entryY=0.27;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-71" value="1. Click &#39;Unlock Vault&#39;">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="241" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-77" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-71" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.27;entryX=0;entryY=0.28;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-72" value="2. POST /api/vault/unlock">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="686" y="190" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-78" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-72" style="curved=1;startArrow=none;endArrow=block;exitX=0.72;exitY=0;entryX=0;entryY=0.27;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-73" value="3. Fetch Vault Target Date &amp; Threshold&#xa;4. Fetch Current Main Balance">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1116" y="70" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-79" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-72" style="curved=1;startArrow=none;endArrow=none;exitX=1;exitY=0.77;entryX=Infinity;entryY=Infinity;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-74" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1116" y="252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-80" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-74" style="curved=1;startArrow=none;endArrow=none;exitX=Infinity;exitY=Infinity;entryX=-Infinity;entryY=Infinity;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-75" value="5. Evaluate Algorithmic Restraints">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="252" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-81" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-75" style="curved=1;startArrow=none;endArrow=block;exitX=-Infinity;exitY=Infinity;entryX=0.91;entryY=1;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-72" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1490" y="296" />
+              <mxPoint x="1116" y="296" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-82" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-72" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.16;entryX=0;entryY=0.73;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-73" value="6. Transfer Funds (If Evaluation = TRUE)&#xa;7. Update Status to UNLOCKED">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1116" y="174" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-83" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-72" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.72;entryX=1;entryY=0.73;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-71" value="8. Return 200 OK (Success) OR 403 (Denied)">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="686" y="246" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="jybGWXuVQw91C6WgNjNZ-84" edge="1" parent="1" source="jybGWXuVQw91C6WgNjNZ-71" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.73;entryX=1;entryY=0.58;rounded=0;" target="jybGWXuVQw91C6WgNjNZ-70" value="9. Display Success/Error Message">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="241" y="246" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
